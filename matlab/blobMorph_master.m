@@ -4,7 +4,7 @@
 % (2009, PNAS).
 %
 % Use:
-%   0. Once: download the image bank with blobMorphDownloadImages (README, Image bank).
+%   0. Once: download the image bank with blobMorphDownloadImages (just run "blobMorphDownloadImages()", or see README).
 %   1. Set the parameters in sections 1 to 10 (section 1 is required, the others have
 %      working defaults; the values given are examples from the project data).
 %   2. Run the whole script (Editor tab > Run, or F5).
@@ -27,7 +27,7 @@
 
 %% 0. Folders (edit only if the folders are moved)
 ToolboxDir = fileparts(fileparts(mfilename('fullpath')));  % NGL-BlobMorph folder
-    if ~isfolder(fullfile(ToolboxDir, 'blobmorph'))             % section-by-section execution
+    if ~isfolder(fullfile(ToolboxDir, 'NGL-BlobMorph'))             % section-by-section execution
         ToolboxDir = fileparts(fileparts(which('blobMorphMatrix')));
     end
 
