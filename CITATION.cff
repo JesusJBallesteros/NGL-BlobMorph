@@ -11,7 +11,8 @@ type: software
 authors:
   - family-names: Ballesteros
     given-names: Jesus J.
-    email: jesusjballesteros@gmail.com
+repository-code: https://github.com/JesusJBallesteros/NGL-BlobMorph
+url: https://github.com/JesusJBallesteros/NGL-BlobMorph
 version: 1.0.0
 license: MIT
 keywords:

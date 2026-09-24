@@ -4,7 +4,7 @@
     python -m blobmorph.download                         # images/Blobs_TrainingRatsD1D2
     python -m blobmorph.download Blobs_TrainingRatsD1D2_FinerSampling --dest FOLDER
 
-Default destination: <BlobMorph>/Images/<set name>.  The images are not distributed with
+Default destination: <NGL-BlobMorph>/Images/<set name>.  The images are not distributed with
 NGL BlobMorph; they belong to their authors (Cox lab).  Publications using them cite
 Zoccolan et al. (2009).
 """

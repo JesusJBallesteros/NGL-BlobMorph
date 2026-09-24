@@ -1,0 +1,18 @@
+# Third-party files kept locally, not redistributed (see README: Reference papers, Image bank)
+/References/
+/Images/
+
+# Output of the scripts and the notebook
+/results/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# MATLAB
+*.asv
+*.m~
+slprj/

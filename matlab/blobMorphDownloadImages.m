@@ -4,7 +4,7 @@ function files = blobMorphDownloadImages(setName, destDir)
 %   FILES = BLOBMORPHDOWNLOADIMAGES downloads the images of folder
 %   images/Blobs_TrainingRatsD1D2 of https://github.com/coxlab/povray_blobs (objects 1 and 2
 %   of Zoccolan et al. 2009, rotations -90 to 90 deg about the vertical axis) into
-%   <BlobMorph>\Images\Blobs_TrainingRatsD1D2 and returns the full file names.
+%   <NGL-BlobMorph>\Images\Blobs_TrainingRatsD1D2 and returns the full file names.
 %
 %   BLOBMORPHDOWNLOADIMAGES(SETNAME) downloads another folder of images/, for example
 %   'Blobs_TrainingRatsD1D2_FinerSampling' or 'Blobs_Training_NewLighting_SoftShadow'.

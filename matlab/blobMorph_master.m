@@ -21,12 +21,12 @@
 %   models\                         3-D model of each level (.json, .pov)
 %   manifest.csv, manifest.json     list of stimuli, settings and results
 %
-% Help: README.md in the BlobMorph folder, "help blobMorphMatrix".
+% Help: README.md in the NGL-BlobMorph folder, "help blobMorphMatrix".
 %
 % NGL BlobMorph. Copyright (c) 2026 Jesus J. Ballesteros. MIT Licence (see LICENSE).
 
 %% 0. Folders (edit only if the folders are moved)
-ToolboxDir = fileparts(fileparts(mfilename('fullpath')));  % BlobMorph folder
+ToolboxDir = fileparts(fileparts(mfilename('fullpath')));  % NGL-BlobMorph folder
     if ~isfolder(fullfile(ToolboxDir, 'blobmorph'))             % section-by-section execution
         ToolboxDir = fileparts(fileparts(which('blobMorphMatrix')));
     end

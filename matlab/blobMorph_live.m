@@ -9,13 +9,13 @@
 %[text] Author: Jesus J. Ballesteros. NGL BlobMorph, MIT Licence (see `LICENSE`).
 %%
 %[text] ## 0. Image bank and folders
-%[text] Image bank: folder `images` of the repository https://github.com/coxlab/povray_blobs (Cox lab; not distributed with NGL BlobMorph). *Download image set* saves the images of *Image set* in `Images\<image set>` of the BlobMorph folder. Results are written to `results\<results folder>`.
-ToolboxDir = fileparts(fileparts(mfilename('fullpath')));  % BlobMorph folder
+%[text] Image bank: folder `images` of the repository https://github.com/coxlab/povray_blobs (Cox lab; not distributed with NGL BlobMorph). *Download image set* saves the images of *Image set* in `Images\<image set>` of the NGL-BlobMorph folder. Results are written to `results\<results folder>`.
+ToolboxDir = fileparts(fileparts(mfilename('fullpath')));  % NGL-BlobMorph folder
 if ~isfolder(fullfile(ToolboxDir, 'blobmorph'))
     ToolboxDir = fileparts(fileparts(which('blobMorphMatrix')));
 end
 assert(isfolder(fullfile(ToolboxDir, 'blobmorph')), ...
-    'BlobMorph folder not found: open this script from BlobMorph\matlab.');
+    'NGL-BlobMorph folder not found: open this script from NGL-BlobMorph\matlab.');
 addpath(fullfile(ToolboxDir, 'matlab'));
 ImageSet = 'Blobs_TrainingRatsD1D2'; %[control:editfield:0b11]{"position":[12,36]}
 DownloadImageSet = false; %[control:checkbox:0b12]{"position":[20,25]}

@@ -1,21 +1,21 @@
 # Validation
 
-Measured on 2026-09-23 and 2026-09-24. `python tests\validate.py` repeats the first table of
+Measured on 2026-09-23 and 2026-09-24. `python tests/validate.py` repeats the first table of
 section 1, section 2 and section 3 (option `--figure FILE`: 1637 x 572 px crop of Fig. S4A).
-Section 4: `examples\fitted_from_images`.
+Section 4: `examples/fitted_from_images`.
 
 ## 1. Built-in renderer and POV-Ray 3.7
 
 Scenes `StimBlob_call_1.pov` and `StimBlob_call_2.pov` (camera z = -10, no antialiasing, POV-Ray
 3.7 default sRGB output), 1100 x 825 px, rendered by POV-Ray 3.7.0 (`pvengine64.exe`) and by
-`blobmorph.render`. Reference renders and scenes: `tests\povray_reference\`.
+`blobmorph.render`. Reference renders and scenes: `tests/povray_reference/`.
 
 | Object | POV-Ray object pixels | Differing silhouette pixels | Mean absolute difference over the object |
 |---|---|---|---|
 | 1 | 249 636 | 2 | 0.03 grey levels |
 | 2 | 191 360 | 2 | 0.03 grey levels |
 
-Intermediate morph `models\morph04.pov` of a morph matrix (50 %, five components with
+Intermediate morph `models/morph04.pov` of a morph matrix (50 %, five components with
 fractional strengths, camera z = -11, antialiasing threshold 0.3), rendered with
 `python -m blobmorph.povray` and with the built-in renderer: mean absolute difference over the
 object 0.13 grey levels, silhouette IoU 0.9993.
@@ -76,7 +76,7 @@ Per-row errors of `'uniform'`: 0.44, 0.49, 0.35, 0.38 px.
 
 `Method = 'fit'` on `Blob_N1_CamRot_y0.png` and `Blob_N2_CamRot_y0.png` (set-up `'auto'`: camera
 z = -11, square pixels, tone curve `zoccolan`; 8 processes; 37 min in total on a shared machine).
-Result: `examples\fitted_from_images\`.
+Result: `examples/fitted_from_images/`.
 
 | Image | Fitted parts | Object-region MAE | Silhouette IoU |
 |---|---|---|---|

@@ -45,9 +45,7 @@ def _tick_levels(levels):
 def matrix_figure(stims, sizes, levels, out_png, out_pdf=None, fig_scale=None,
                   luminance=None, title=None, cell_aspect=1.9, target_cell_h=170, dpi=200):
     """Draw and save the morph matrix. `luminance`: grey level per size (or None)."""
-    import matplotlib
-    matplotlib.use("Agg")
-    import matplotlib.pyplot as plt
+    from matplotlib.figure import Figure  # no pyplot: the backend of the caller is not changed
     from matplotlib.patches import Rectangle
 
     if fig_scale is None:
@@ -61,7 +59,7 @@ def matrix_figure(stims, sizes, levels, out_png, out_pdf=None, fig_scale=None,
     inch_per_px = 11.0 / max(total_w, 1)
     fig_w = total_w * inch_per_px + 2.0
     fig_h = H * inch_per_px + 1.6
-    fig = plt.figure(figsize=(fig_w, fig_h))
+    fig = Figure(figsize=(fig_w, fig_h))
     left, bottom = 1.1 / fig_w, 1.0 / fig_h
     ax = fig.add_axes([left, bottom, W * inch_per_px / fig_w, H * inch_per_px / fig_h])
     ax.imshow(panel, cmap="gray", vmin=0, vmax=255, interpolation="nearest")
@@ -95,16 +93,14 @@ def matrix_figure(stims, sizes, levels, out_png, out_pdf=None, fig_scale=None,
     fig.savefig(out_png, dpi=dpi, facecolor="white")
     if out_pdf:
         fig.savefig(out_pdf, facecolor="white")
-    plt.close(fig)
     return panel
 
 
 def distance_figure(ts_dense, cum, t_levels, levels_pct, chords, out_png, title=None):
     """Cumulative pixel distance along the continuum + distances between chosen morphs."""
-    import matplotlib
-    matplotlib.use("Agg")
-    import matplotlib.pyplot as plt
-    fig, (a1, a2) = plt.subplots(1, 2, figsize=(12, 4.2))
+    from matplotlib.figure import Figure
+    fig = Figure(figsize=(12, 4.2))
+    a1, a2 = fig.subplots(1, 2)
     if ts_dense is not None and cum is not None:
         a1.plot(np.asarray(ts_dense), np.asarray(cum) / max(cum[-1], 1e-12), "k-", lw=1.5,
                 label="dense continuum")
@@ -130,4 +126,3 @@ def distance_figure(ts_dense, cum, t_levels, levels_pct, chords, out_png, title=
         fig.suptitle(title)
     fig.tight_layout()
     fig.savefig(out_png, dpi=150)
-    plt.close(fig)
