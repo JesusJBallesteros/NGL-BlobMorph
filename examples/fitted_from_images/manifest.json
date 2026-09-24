@@ -1,0 +1,718 @@
+{
+  "created": "2026-09-24 11:12:09",
+  "config": {
+    "image_a": "Images/Blobs_TrainingRatsD1D2/Blob_N1_CamRot_y0.png",
+    "image_b": "Images/Blobs_TrainingRatsD1D2/Blob_N2_CamRot_y0.png",
+    "model_a": null,
+    "model_b": null,
+    "pov_declare": {},
+    "method": "fit",
+    "setup": "auto",
+    "n_levels": 9,
+    "sizes": [
+      10.0,
+      20.0,
+      30.0,
+      40.0,
+      50.0
+    ],
+    "sampling": "uniform",
+    "n_dense": null,
+    "dense_scale": 0.5,
+    "dense_supersample": 2,
+    "correspondence": "match",
+    "vanish": "fade",
+    "interpolation": "auto",
+    "antialias": "auto",
+    "center": "anchors",
+    "center_horizontal": true,
+    "crop_margin": 2,
+    "size_reference": "crop_max",
+    "px_per_deg": null,
+    "screen_px": [
+      1920,
+      1080
+    ],
+    "screen_cm": null,
+    "distance_cm": null,
+    "deg_mode": "mworks",
+    "stim_pos_deg": [
+      0.0,
+      0.0
+    ],
+    "save_screens": true,
+    "display_gamma": 2.2,
+    "luminance_column": true,
+    "luminance_display": "schematic",
+    "use_inputs_as_anchors": false,
+    "save_frames": true,
+    "save_pov": true,
+    "processes": 8,
+    "fit": {},
+    "title": null,
+    "out_dir": "examples/fitted_from_images"
+  },
+  "info": {
+    "method": "fit",
+    "fit_a": {
+      "structure": [
+        "mid",
+        "pair",
+        "mid",
+        "pair"
+      ],
+      "theta": [
+        -0.5575540894375487,
+        6.642068633818856,
+        -0.06852856312141523,
+        -0.796630368309236,
+        0.11715566601694696,
+        -51.094531734627125,
+        -0.23077192975615346,
+        0.4381646121426672,
+        5.201629064859794,
+        0.31846244224327935,
+        0.14955266421556299,
+        -0.8230686124405008,
+        42.577557140094996,
+        -7.446325536664336,
+        -175.6298567315871,
+        -0.7416843418585137,
+        5.286510310853122,
+        -1.8206834166776837,
+        -0.9559749910166963,
+        -1.7483839480794252,
+        -23.799790034790824,
+        -0.38562845142761343,
+        -0.5998561148607522,
+        6.550292254721536,
+        -1.8633586247881053,
+        -0.41626593977684007,
+        -1.9805633607344413,
+        -17.391441860840196,
+        13.32201828527207,
+        10.457322298777239
+      ],
+      "rms_fit": 11.136143135126328,
+      "mae_object": 11.937924197971045,
+      "mae_image": 4.500678067012867,
+      "iou_full": 0.9918218228621222,
+      "symmetric": "True"
+    },
+    "fit_b": {
+      "structure": [
+        "mid",
+        "pair",
+        "mid"
+      ],
+      "theta": [
+        -0.3748667712528833,
+        6.443045456768097,
+        -0.36116112590931476,
+        0.1886592661698833,
+        -0.43844607963011073,
+        18.986454731189394,
+        -0.6308512846819271,
+        0.5477919120820065,
+        5.587085373261178,
+        0.27103671280838565,
+        -0.6302466594322608,
+        -0.5514887636933608,
+        7.050528347337062,
+        25.077678128668705,
+        144.93141421188022,
+        -0.04994410042029629,
+        6.041791800175594,
+        -1.6265408901553244,
+        -1.2852601260580427,
+        -1.6553311500478183,
+        -32.5519531810439
+      ],
+      "rms_fit": 6.945293147240347,
+      "mae_object": 7.827543888842666,
+      "mae_image": 2.2875755871819776,
+      "iou_full": 0.9919918462434478,
+      "symmetric": "True"
+    },
+    "object_a": {
+      "name": "fitted",
+      "threshold": 0.2,
+      "rotate": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "translate": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ambient": 0.4,
+      "diffuse": 0.6,
+      "components": [
+        {
+          "name": "mid0",
+          "radius": 0.8,
+          "strength": 1.0,
+          "translate": [
+            0.0,
+            -9.792995561153298,
+            2.6595081961704405
+          ],
+          "scale": [
+            1.167208485535575,
+            0.5635569887953995,
+            1.40536803813152
+          ],
+          "rotate": [
+            -51.094531734627125,
+            0.0,
+            0.0
+          ],
+          "center": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "pair1",
+          "radius": 0.8,
+          "strength": 1.0,
+          "translate": [
+            0.5056953753508863,
+            2.161530204436677,
+            7.445896500063584
+          ],
+          "scale": [
+            1.7187649723108678,
+            1.4516432861568942,
+            0.5488527649609699
+          ],
+          "rotate": [
+            42.577557140094996,
+            -7.446325536664336,
+            -175.6298567315871
+          ],
+          "center": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "pair1_mirror",
+          "radius": 0.8,
+          "strength": 1.0,
+          "translate": [
+            -0.5056953753508863,
+            2.161530204436677,
+            7.445896500063584
+          ],
+          "scale": [
+            1.7187649723108678,
+            1.4516432861568942,
+            0.5488527649609699
+          ],
+          "rotate": [
+            42.577557140094996,
+            7.446325536664336,
+            175.6298567315871
+          ],
+          "center": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "mid2",
+          "radius": 0.8,
+          "strength": 1.0,
+          "translate": [
+            0.0,
+            -5.8515491146988765,
+            20.856170024500727
+          ],
+          "scale": [
+            0.20239382207825066,
+            0.48054642376518425,
+            0.21756874775484206
+          ],
+          "rotate": [
+            -23.799790034790824,
+            0.0,
+            0.0
+          ],
+          "center": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "pair3",
+          "radius": 0.8,
+          "strength": 1.0,
+          "translate": [
+            -10.23163976356846,
+            -2.8720955081020096,
+            33.740707311619694
+          ],
+          "scale": [
+            0.19393832681543688,
+            0.8243810732325063,
+            0.17248934553715972
+          ],
+          "rotate": [
+            -17.391441860840196,
+            13.32201828527207,
+            10.457322298777239
+          ],
+          "center": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "pair3_mirror",
+          "radius": 0.8,
+          "strength": 1.0,
+          "translate": [
+            10.23163976356846,
+            -2.8720955081020096,
+            33.740707311619694
+          ],
+          "scale": [
+            0.19393832681543688,
+            0.8243810732325063,
+            0.17248934553715972
+          ],
+          "rotate": [
+            -17.391441860840196,
+            -13.32201828527207,
+            -10.457322298777239
+          ],
+          "center": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    "object_b": {
+      "name": "fitted",
+      "threshold": 0.2,
+      "rotate": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "translate": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ambient": 0.4,
+      "diffuse": 0.6,
+      "components": [
+        {
+          "name": "mid0",
+          "radius": 0.8,
+          "strength": 1.0,
+          "translate": [
+            0.0,
+            1.1538227254394877,
+            7.707423093746126
+          ],
+          "scale": [
+            0.8710833826735201,
+            1.509536752725952,
+            0.806297475458704
+          ],
+          "rotate": [
+            18.986454731189394,
+            0.0,
+            0.0
+          ],
+          "center": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "pair1",
+          "radius": 0.8,
+          "strength": 1.0,
+          "translate": [
+            -0.985472615765418,
+            0.870127195193282,
+            7.474189700693306
+          ],
+          "scale": [
+            1.6391540148233585,
+            0.6655755605199722,
+            0.7201143843918797
+          ],
+          "rotate": [
+            7.050528347337062,
+            25.077678128668705,
+            144.93141421188022
+          ],
+          "center": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "pair1_mirror",
+          "radius": 0.8,
+          "strength": 1.0,
+          "translate": [
+            0.985472615765418,
+            0.870127195193282,
+            7.474189700693306
+          ],
+          "scale": [
+            1.6391540148233585,
+            0.6655755605199722,
+            0.7201143843918797
+          ],
+          "rotate": [
+            7.050528347337062,
+            -25.077678128668705,
+            -144.93141421188022
+          ],
+          "center": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "name": "mid2",
+          "radius": 0.8,
+          "strength": 1.0,
+          "translate": [
+            0.0,
+            -9.524870592084618,
+            21.214715752635016
+          ],
+          "scale": [
+            0.24576061198782023,
+            0.34572328620655696,
+            0.23878598254816857
+          ],
+          "rotate": [
+            -32.5519531810439,
+            0.0,
+            0.0
+          ],
+          "center": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      ]
+    },
+    "interpolation": "geometric"
+  },
+  "setup": {
+    "width": 1078,
+    "height": 617,
+    "cam_location": [
+      0.0,
+      0.0,
+      -11.0
+    ],
+    "cam_look_at": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "cam_angle": 15.0,
+    "cam_right": 1.747163695299838,
+    "cam_up": 1.0,
+    "light": [
+      0.0,
+      -10.0,
+      -10.0
+    ],
+    "shadows": true,
+    "antialias": false,
+    "aa_threshold": 0.3,
+    "aa_depth": 3,
+    "tone": "zoccolan",
+    "shift": [
+      0,
+      0
+    ],
+    "out_shape": [
+      0,
+      0
+    ]
+  },
+  "levels_percent": [
+    0.0,
+    12.5,
+    25.0,
+    37.5,
+    50.0,
+    62.5,
+    75.0,
+    87.5,
+    100.0
+  ],
+  "t": [
+    0.0,
+    0.125,
+    0.25,
+    0.375,
+    0.5,
+    0.625,
+    0.75,
+    0.875,
+    1.0
+  ],
+  "dense_indices": null,
+  "sizes_deg": [
+    10.0,
+    20.0,
+    30.0,
+    40.0,
+    50.0
+  ],
+  "display": {
+    "px_per_deg": 16.05,
+    "screen_px": [
+      1920,
+      1080
+    ],
+    "screen_cm": null,
+    "distance_cm": null,
+    "deg_mode": "mworks",
+    "px_per_deg_effective_at_10deg": 16.05
+  },
+  "centering_shift": [
+    4,
+    0
+  ],
+  "crop_box_rows_cols": [
+    2,
+    612,
+    184,
+    894
+  ],
+  "stimulus_files": [
+    [
+      "stimuli/morph00_level000.00_size010.0.png",
+      "stimuli/morph01_level012.50_size010.0.png",
+      "stimuli/morph02_level025.00_size010.0.png",
+      "stimuli/morph03_level037.50_size010.0.png",
+      "stimuli/morph04_level050.00_size010.0.png",
+      "stimuli/morph05_level062.50_size010.0.png",
+      "stimuli/morph06_level075.00_size010.0.png",
+      "stimuli/morph07_level087.50_size010.0.png",
+      "stimuli/morph08_level100.00_size010.0.png"
+    ],
+    [
+      "stimuli/morph00_level000.00_size020.0.png",
+      "stimuli/morph01_level012.50_size020.0.png",
+      "stimuli/morph02_level025.00_size020.0.png",
+      "stimuli/morph03_level037.50_size020.0.png",
+      "stimuli/morph04_level050.00_size020.0.png",
+      "stimuli/morph05_level062.50_size020.0.png",
+      "stimuli/morph06_level075.00_size020.0.png",
+      "stimuli/morph07_level087.50_size020.0.png",
+      "stimuli/morph08_level100.00_size020.0.png"
+    ],
+    [
+      "stimuli/morph00_level000.00_size030.0.png",
+      "stimuli/morph01_level012.50_size030.0.png",
+      "stimuli/morph02_level025.00_size030.0.png",
+      "stimuli/morph03_level037.50_size030.0.png",
+      "stimuli/morph04_level050.00_size030.0.png",
+      "stimuli/morph05_level062.50_size030.0.png",
+      "stimuli/morph06_level075.00_size030.0.png",
+      "stimuli/morph07_level087.50_size030.0.png",
+      "stimuli/morph08_level100.00_size030.0.png"
+    ],
+    [
+      "stimuli/morph00_level000.00_size040.0.png",
+      "stimuli/morph01_level012.50_size040.0.png",
+      "stimuli/morph02_level025.00_size040.0.png",
+      "stimuli/morph03_level037.50_size040.0.png",
+      "stimuli/morph04_level050.00_size040.0.png",
+      "stimuli/morph05_level062.50_size040.0.png",
+      "stimuli/morph06_level075.00_size040.0.png",
+      "stimuli/morph07_level087.50_size040.0.png",
+      "stimuli/morph08_level100.00_size040.0.png"
+    ],
+    [
+      "stimuli/morph00_level000.00_size050.0.png",
+      "stimuli/morph01_level012.50_size050.0.png",
+      "stimuli/morph02_level025.00_size050.0.png",
+      "stimuli/morph03_level037.50_size050.0.png",
+      "stimuli/morph04_level050.00_size050.0.png",
+      "stimuli/morph05_level062.50_size050.0.png",
+      "stimuli/morph06_level075.00_size050.0.png",
+      "stimuli/morph07_level087.50_size050.0.png",
+      "stimuli/morph08_level100.00_size050.0.png"
+    ]
+  ],
+  "screen_files": [
+    [
+      "screens/morph00_level000.00_size010.0.png",
+      "screens/morph01_level012.50_size010.0.png",
+      "screens/morph02_level025.00_size010.0.png",
+      "screens/morph03_level037.50_size010.0.png",
+      "screens/morph04_level050.00_size010.0.png",
+      "screens/morph05_level062.50_size010.0.png",
+      "screens/morph06_level075.00_size010.0.png",
+      "screens/morph07_level087.50_size010.0.png",
+      "screens/morph08_level100.00_size010.0.png"
+    ],
+    [
+      "screens/morph00_level000.00_size020.0.png",
+      "screens/morph01_level012.50_size020.0.png",
+      "screens/morph02_level025.00_size020.0.png",
+      "screens/morph03_level037.50_size020.0.png",
+      "screens/morph04_level050.00_size020.0.png",
+      "screens/morph05_level062.50_size020.0.png",
+      "screens/morph06_level075.00_size020.0.png",
+      "screens/morph07_level087.50_size020.0.png",
+      "screens/morph08_level100.00_size020.0.png"
+    ],
+    [
+      "screens/morph00_level000.00_size030.0.png",
+      "screens/morph01_level012.50_size030.0.png",
+      "screens/morph02_level025.00_size030.0.png",
+      "screens/morph03_level037.50_size030.0.png",
+      "screens/morph04_level050.00_size030.0.png",
+      "screens/morph05_level062.50_size030.0.png",
+      "screens/morph06_level075.00_size030.0.png",
+      "screens/morph07_level087.50_size030.0.png",
+      "screens/morph08_level100.00_size030.0.png"
+    ],
+    [
+      "screens/morph00_level000.00_size040.0.png",
+      "screens/morph01_level012.50_size040.0.png",
+      "screens/morph02_level025.00_size040.0.png",
+      "screens/morph03_level037.50_size040.0.png",
+      "screens/morph04_level050.00_size040.0.png",
+      "screens/morph05_level062.50_size040.0.png",
+      "screens/morph06_level075.00_size040.0.png",
+      "screens/morph07_level087.50_size040.0.png",
+      "screens/morph08_level100.00_size040.0.png"
+    ],
+    [
+      "screens/morph00_level000.00_size050.0.png",
+      "screens/morph01_level012.50_size050.0.png",
+      "screens/morph02_level025.00_size050.0.png",
+      "screens/morph03_level037.50_size050.0.png",
+      "screens/morph04_level050.00_size050.0.png",
+      "screens/morph05_level062.50_size050.0.png",
+      "screens/morph06_level075.00_size050.0.png",
+      "screens/morph07_level087.50_size050.0.png",
+      "screens/morph08_level100.00_size050.0.png"
+    ]
+  ],
+  "luminance_ff_level": [
+    [
+      21.369026820183812,
+      21.66228903747836,
+      21.814126428632797,
+      21.800903886129923,
+      21.523863037575268,
+      20.937149380597194,
+      20.028203552657114,
+      18.845981572619504,
+      17.494691359533547
+    ],
+    [
+      40.213978340794604,
+      40.76132016398005,
+      41.047564821263066,
+      41.02049166326295,
+      40.5020367687615,
+      39.40162025948855,
+      37.692268544776404,
+      35.47164025067485,
+      32.93434862450867
+    ],
+    [
+      58.17994620834849,
+      58.971353223262916,
+      59.38439856245677,
+      59.343073291992226,
+      58.590139832030566,
+      56.999839117208275,
+      54.53090296273504,
+      51.319692284979425,
+      47.65453887938983
+    ],
+    [
+      75.55134064459257,
+      76.57698588159373,
+      77.11204389029587,
+      77.05920637820675,
+      76.0851843874488,
+      74.01668705331714,
+      70.81300165666642,
+      66.64346325978669,
+      61.88413391126939
+    ],
+    [
+      92.44616366672523,
+      93.7037674169453,
+      94.36158620921304,
+      94.2982972789294,
+      93.10401641968997,
+      90.57399531804406,
+      86.65117283934876,
+      81.54715460136822,
+      75.7231903583888
+    ]
+  ],
+  "luminance_ff_level_per_size": [
+    20.608470563934173,
+    38.782807715278956,
+    56.10820937360039,
+    72.86022745146414,
+    89.15659378985032
+  ],
+  "fullfield_files": [
+    "screens/fullfield_luminance_size010.0.png",
+    "screens/fullfield_luminance_size020.0.png",
+    "screens/fullfield_luminance_size030.0.png",
+    "screens/fullfield_luminance_size040.0.png",
+    "screens/fullfield_luminance_size050.0.png"
+  ],
+  "chord_distances_full_res": [
+    13220.520942837313,
+    12700.208187270002,
+    14397.118739525627,
+    17643.117695010707,
+    20780.1820011279,
+    23468.724464699822,
+    25301.271825740303,
+    26233.86357363322
+  ],
+  "figure": "figures/morph_matrix.png",
+  "elapsed_s": 2202.279586791992
+}

@@ -1,0 +1,400 @@
+{
+  "created": "2026-09-24 10:35:20",
+  "config": {
+    "image_a": "Images/Blobs_TrainingRatsD1D2/Blob_N1_CamRot_y0.png",
+    "image_b": "Images/Blobs_TrainingRatsD1D2/Blob_N2_CamRot_y0.png",
+    "model_a": null,
+    "model_b": null,
+    "pov_declare": {},
+    "method": "auto",
+    "setup": "auto",
+    "n_levels": 9,
+    "sizes": [
+      10.0,
+      20.0,
+      30.0,
+      40.0,
+      50.0
+    ],
+    "sampling": "uniform",
+    "n_dense": null,
+    "dense_scale": 0.5,
+    "dense_supersample": 2,
+    "correspondence": "match",
+    "vanish": "fade",
+    "interpolation": "auto",
+    "antialias": "auto",
+    "center": "anchors",
+    "center_horizontal": true,
+    "crop_margin": 2,
+    "size_reference": "crop_max",
+    "px_per_deg": null,
+    "screen_px": [
+      1920,
+      1080
+    ],
+    "screen_cm": null,
+    "distance_cm": null,
+    "deg_mode": "mworks",
+    "stim_pos_deg": [
+      0.0,
+      0.0
+    ],
+    "save_screens": true,
+    "display_gamma": 2.2,
+    "luminance_column": true,
+    "luminance_display": "schematic",
+    "use_inputs_as_anchors": false,
+    "save_frames": true,
+    "save_pov": true,
+    "processes": 8,
+    "fit": {},
+    "title": null,
+    "out_dir": "examples/reproduction_FigS4A"
+  },
+  "info": {
+    "method": "preset",
+    "preset": "zoccolan2009",
+    "identification": {
+      "reversed": false,
+      "view": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "match_a": {
+        "object": 1,
+        "cam_z": -10.0,
+        "iou_small": 0.9868746433326993,
+        "view": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "light": [
+          0.0,
+          -10.0,
+          -10.0
+        ],
+        "shift": [
+          -131,
+          -11
+        ],
+        "iou": 0.9989827060020345,
+        "frame": [
+          825,
+          1100
+        ]
+      },
+      "match_b": {
+        "object": 2,
+        "cam_z": -10.0,
+        "iou_small": 0.9814052986671055,
+        "view": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "light": [
+          0.0,
+          -10.0,
+          -10.0
+        ],
+        "shift": [
+          -131,
+          -11
+        ],
+        "iou": 0.9984639498432601,
+        "frame": [
+          825,
+          1100
+        ]
+      },
+      "tone_mae": 0.6334444030198527
+    },
+    "interpolation": "pov"
+  },
+  "setup": {
+    "width": 1100,
+    "height": 825,
+    "cam_location": [
+      0.0,
+      0.0,
+      -10.0
+    ],
+    "cam_look_at": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "cam_angle": 15.0,
+    "cam_right": 1.33,
+    "cam_up": 1.0,
+    "light": [
+      0.0,
+      -10.0,
+      -10.0
+    ],
+    "shadows": true,
+    "antialias": false,
+    "aa_threshold": 0.3,
+    "aa_depth": 3,
+    "tone": "zoccolan",
+    "shift": [
+      -131,
+      -11
+    ],
+    "out_shape": [
+      617,
+      1078
+    ]
+  },
+  "levels_percent": [
+    0.0,
+    12.5,
+    25.0,
+    37.5,
+    50.0,
+    62.5,
+    75.0,
+    87.5,
+    100.0
+  ],
+  "t": [
+    0.0,
+    0.125,
+    0.25,
+    0.375,
+    0.5,
+    0.625,
+    0.75,
+    0.875,
+    1.0
+  ],
+  "dense_indices": null,
+  "sizes_deg": [
+    10.0,
+    20.0,
+    30.0,
+    40.0,
+    50.0
+  ],
+  "display": {
+    "px_per_deg": 16.05,
+    "screen_px": [
+      1920,
+      1080
+    ],
+    "screen_cm": null,
+    "distance_cm": null,
+    "deg_mode": "mworks",
+    "px_per_deg_effective_at_10deg": 16.05
+  },
+  "centering_shift": [
+    5,
+    0
+  ],
+  "crop_box_rows_cols": [
+    5,
+    617,
+    184,
+    894
+  ],
+  "stimulus_files": [
+    [
+      "stimuli/morph00_level000.00_size010.0.png",
+      "stimuli/morph01_level012.50_size010.0.png",
+      "stimuli/morph02_level025.00_size010.0.png",
+      "stimuli/morph03_level037.50_size010.0.png",
+      "stimuli/morph04_level050.00_size010.0.png",
+      "stimuli/morph05_level062.50_size010.0.png",
+      "stimuli/morph06_level075.00_size010.0.png",
+      "stimuli/morph07_level087.50_size010.0.png",
+      "stimuli/morph08_level100.00_size010.0.png"
+    ],
+    [
+      "stimuli/morph00_level000.00_size020.0.png",
+      "stimuli/morph01_level012.50_size020.0.png",
+      "stimuli/morph02_level025.00_size020.0.png",
+      "stimuli/morph03_level037.50_size020.0.png",
+      "stimuli/morph04_level050.00_size020.0.png",
+      "stimuli/morph05_level062.50_size020.0.png",
+      "stimuli/morph06_level075.00_size020.0.png",
+      "stimuli/morph07_level087.50_size020.0.png",
+      "stimuli/morph08_level100.00_size020.0.png"
+    ],
+    [
+      "stimuli/morph00_level000.00_size030.0.png",
+      "stimuli/morph01_level012.50_size030.0.png",
+      "stimuli/morph02_level025.00_size030.0.png",
+      "stimuli/morph03_level037.50_size030.0.png",
+      "stimuli/morph04_level050.00_size030.0.png",
+      "stimuli/morph05_level062.50_size030.0.png",
+      "stimuli/morph06_level075.00_size030.0.png",
+      "stimuli/morph07_level087.50_size030.0.png",
+      "stimuli/morph08_level100.00_size030.0.png"
+    ],
+    [
+      "stimuli/morph00_level000.00_size040.0.png",
+      "stimuli/morph01_level012.50_size040.0.png",
+      "stimuli/morph02_level025.00_size040.0.png",
+      "stimuli/morph03_level037.50_size040.0.png",
+      "stimuli/morph04_level050.00_size040.0.png",
+      "stimuli/morph05_level062.50_size040.0.png",
+      "stimuli/morph06_level075.00_size040.0.png",
+      "stimuli/morph07_level087.50_size040.0.png",
+      "stimuli/morph08_level100.00_size040.0.png"
+    ],
+    [
+      "stimuli/morph00_level000.00_size050.0.png",
+      "stimuli/morph01_level012.50_size050.0.png",
+      "stimuli/morph02_level025.00_size050.0.png",
+      "stimuli/morph03_level037.50_size050.0.png",
+      "stimuli/morph04_level050.00_size050.0.png",
+      "stimuli/morph05_level062.50_size050.0.png",
+      "stimuli/morph06_level075.00_size050.0.png",
+      "stimuli/morph07_level087.50_size050.0.png",
+      "stimuli/morph08_level100.00_size050.0.png"
+    ]
+  ],
+  "screen_files": [
+    [
+      "screens/morph00_level000.00_size010.0.png",
+      "screens/morph01_level012.50_size010.0.png",
+      "screens/morph02_level025.00_size010.0.png",
+      "screens/morph03_level037.50_size010.0.png",
+      "screens/morph04_level050.00_size010.0.png",
+      "screens/morph05_level062.50_size010.0.png",
+      "screens/morph06_level075.00_size010.0.png",
+      "screens/morph07_level087.50_size010.0.png",
+      "screens/morph08_level100.00_size010.0.png"
+    ],
+    [
+      "screens/morph00_level000.00_size020.0.png",
+      "screens/morph01_level012.50_size020.0.png",
+      "screens/morph02_level025.00_size020.0.png",
+      "screens/morph03_level037.50_size020.0.png",
+      "screens/morph04_level050.00_size020.0.png",
+      "screens/morph05_level062.50_size020.0.png",
+      "screens/morph06_level075.00_size020.0.png",
+      "screens/morph07_level087.50_size020.0.png",
+      "screens/morph08_level100.00_size020.0.png"
+    ],
+    [
+      "screens/morph00_level000.00_size030.0.png",
+      "screens/morph01_level012.50_size030.0.png",
+      "screens/morph02_level025.00_size030.0.png",
+      "screens/morph03_level037.50_size030.0.png",
+      "screens/morph04_level050.00_size030.0.png",
+      "screens/morph05_level062.50_size030.0.png",
+      "screens/morph06_level075.00_size030.0.png",
+      "screens/morph07_level087.50_size030.0.png",
+      "screens/morph08_level100.00_size030.0.png"
+    ],
+    [
+      "screens/morph00_level000.00_size040.0.png",
+      "screens/morph01_level012.50_size040.0.png",
+      "screens/morph02_level025.00_size040.0.png",
+      "screens/morph03_level037.50_size040.0.png",
+      "screens/morph04_level050.00_size040.0.png",
+      "screens/morph05_level062.50_size040.0.png",
+      "screens/morph06_level075.00_size040.0.png",
+      "screens/morph07_level087.50_size040.0.png",
+      "screens/morph08_level100.00_size040.0.png"
+    ],
+    [
+      "screens/morph00_level000.00_size050.0.png",
+      "screens/morph01_level012.50_size050.0.png",
+      "screens/morph02_level025.00_size050.0.png",
+      "screens/morph03_level037.50_size050.0.png",
+      "screens/morph04_level050.00_size050.0.png",
+      "screens/morph05_level062.50_size050.0.png",
+      "screens/morph06_level075.00_size050.0.png",
+      "screens/morph07_level087.50_size050.0.png",
+      "screens/morph08_level100.00_size050.0.png"
+    ]
+  ],
+  "luminance_ff_level": [
+    [
+      20.920551565767756,
+      20.654973327305836,
+      20.138297669806953,
+      19.463817339392875,
+      18.795154505693233,
+      18.18664428976614,
+      17.65621252977655,
+      17.417628656608176,
+      17.261965772441318
+    ],
+    [
+      39.43728626645555,
+      38.92844899371903,
+      37.957932232404495,
+      36.690876682533826,
+      35.43551739053259,
+      34.28831556495014,
+      33.28925693606174,
+      32.83923244103281,
+      32.55004384189763
+    ],
+    [
+      57.02274123982747,
+      56.29180141402948,
+      54.88809546014383,
+      53.05298811766342,
+      51.236576785900475,
+      49.58151620589826,
+      48.143242019007786,
+      47.492555885828516,
+      47.07309016037358
+    ],
+    [
+      74.029660201969,
+      73.0766247971227,
+      71.2509880428927,
+      68.87117675049943,
+      66.51728029709581,
+      64.3674460791951,
+      62.50139689091664,
+      61.65721973550708,
+      61.11130117628192
+    ],
+    [
+      90.68913577036747,
+      89.52230504567052,
+      87.29001381238105,
+      84.37553351859627,
+      81.48794457967688,
+      78.8571356242123,
+      76.56423630416131,
+      75.53246339483239,
+      74.86614376022264
+    ]
+  ],
+  "luminance_ff_level_per_size": [
+    18.943916184062093,
+    35.71299003884308,
+    51.64251192096364,
+    67.04256599683116,
+    82.1316568677912
+  ],
+  "fullfield_files": [
+    "screens/fullfield_luminance_size010.0.png",
+    "screens/fullfield_luminance_size020.0.png",
+    "screens/fullfield_luminance_size030.0.png",
+    "screens/fullfield_luminance_size040.0.png",
+    "screens/fullfield_luminance_size050.0.png"
+  ],
+  "chord_distances_full_res": [
+    22940.465688385666,
+    20795.65392095185,
+    19261.55720599973,
+    20403.209159345497,
+    18804.35066680049,
+    16984.585953151756,
+    13795.733108465096,
+    13542.667757868094
+  ],
+  "figure": "figures/morph_matrix.png",
+  "elapsed_s": 15.42861008644104
+}

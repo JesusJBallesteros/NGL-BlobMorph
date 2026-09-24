@@ -1,0 +1,91 @@
+cff-version: 1.2.0
+message: >-
+  Cite this software, together with the articles in which the objects and the
+  morphing procedure were introduced (see references).
+title: NGL BlobMorph
+abstract: >-
+  MATLAB and Python tools that create morph matrices (morph levels x stimulus
+  sizes) between the three-dimensional "blob" objects of Zoccolan et al. (2009),
+  following the procedure of Rhee et al. (2025).
+type: software
+authors:
+  - family-names: Ballesteros
+    given-names: Jesus J.
+    email: jesusjballesteros@gmail.com
+version: 1.0.0
+license: MIT
+keywords:
+  - visual stimuli
+  - morphing
+  - object recognition
+  - POV-Ray
+  - rat vision
+  - MATLAB
+  - Python
+references:
+  - type: article
+    authors:
+      - family-names: Rhee
+        given-names: Juliana Y.
+      - family-names: Echavarría
+        given-names: César
+      - family-names: Soucy
+        given-names: Edward
+      - family-names: Greenwood
+        given-names: Joel
+      - family-names: Masís
+        given-names: Javier A.
+      - family-names: Cox
+        given-names: David D.
+    title: Neural correlates of visual object recognition in rats
+    journal: Cell Reports
+    volume: 44
+    start: 115461
+    year: 2025
+    doi: 10.1016/j.celrep.2025.115461
+  - type: article
+    authors:
+      - family-names: Zoccolan
+        given-names: Davide
+      - family-names: Oertelt
+        given-names: Nadja
+      - family-names: DiCarlo
+        given-names: James J.
+      - family-names: Cox
+        given-names: David D.
+    title: A rodent model for the study of invariant visual object recognition
+    journal: Proceedings of the National Academy of Sciences of the United States of America
+    volume: 106
+    issue: 21
+    start: 8748
+    end: 8753
+    year: 2009
+    doi: 10.1073/pnas.0811583106
+  - type: software
+    authors:
+      - name: Cox Lab
+    title: povray_blobs
+    repository-code: https://github.com/coxlab/povray_blobs
+  - type: software
+    authors:
+      - family-names: Rhee
+        given-names: Juliana Y.
+    title: morph-pov
+    repository-code: https://github.com/julianarhee/morph-pov
+    license: MIT
+  - type: software
+    authors:
+      - family-names: Rhee
+        given-names: Juliana Y.
+    title: rat-2p-area-characterizations
+    repository-code: https://github.com/julianarhee/rat-2p-area-characterizations
+    license: MIT
+  - type: article
+    authors:
+      - family-names: Hansen
+        given-names: Nikolaus
+    title: "The CMA Evolution Strategy: A Tutorial"
+    year: 2016
+    identifiers:
+      - type: other
+        value: "arXiv:1604.00772"
